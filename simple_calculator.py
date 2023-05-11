@@ -12,8 +12,12 @@ print("\033[0mSUBTRACTION: \033[91m2".center(85))
 print("\033[0mMULTIPLICATION: \033[92m3".center(87))
 print("\033[0mDIVISION: \033[95m4".center(81))
 
+while True:
+        try:
 # Ask the user to enter the first number
+            first_number = float(input("Please enter the first number: "))
 # Ask the user to enter the second number
+            second_number = float(input("Please enter the second number: "))
 # Ask the user about the operation they want to use (1-4)
     # If the user entered invalid character:
 
