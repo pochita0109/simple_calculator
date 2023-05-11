@@ -26,7 +26,13 @@ while True:
             continue
 
 # If addition (1)
+        if operation == 1:
+            while True:
     # Print the result
+                    sum = first_number + second_number
+                    print(f"The sum is {sum} \n")
+                    break
+         
 # If subtraction (2)
     # Print the result 
 # If multiplication (3)
