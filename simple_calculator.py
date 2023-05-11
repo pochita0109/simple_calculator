@@ -25,16 +25,22 @@ while True:
             print("Error! the value that you have entered is invalid".upper())
             continue
 
-# If addition (1)
+        # If addition (1)
         if operation == 1:
             while True:
-    # Print the result
+                    # Print the result
                     sum = first_number + second_number
                     print(f"The sum is {sum} \n")
                     break
          
-# If subtraction (2)
-    # Print the result 
+        # If subtraction (2)
+        elif operation == 2:
+            while True:
+                    # Print the result
+                    difference = first_number - second_number
+                    print(f"The difference is {difference} \n")
+                    break
+             
 # If multiplication (3)
     # Print the result
 # if division (4)
