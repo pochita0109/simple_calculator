@@ -2,7 +2,16 @@
 # Assignment 5
 # Simple Calculator
 
+print("\033[93m-" * 80)
+print("Simple Calculator".center(80))
+print("\033[93m-" * 80)
+
 # Show the operation that is available on simple calculator
+print("\033[0mADDITION: \033[94m1".center(81))
+print("\033[0mSUBTRACTION: \033[91m2".center(85))
+print("\033[0mMULTIPLICATION: \033[92m3".center(87))
+print("\033[0mDIVISION: \033[95m4".center(81))
+
 # Ask the user to enter the first number
 # Ask the user to enter the second number
 # Ask the user about the operation they want to use (1-4)
