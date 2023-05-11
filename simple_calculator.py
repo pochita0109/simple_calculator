@@ -19,7 +19,11 @@ while True:
 # Ask the user to enter the second number
             second_number = float(input("Please enter the second number: "))
 # Ask the user about the operation they want to use (1-4)
+            operation = int(input("\033[94mPlease enter the operation that you want to use (1,2,3,4): "))
     # If the user entered invalid character:
+        except ValueError:
+            print("Error! the value that you have entered is invalid".upper())
+            continue
 
 # If addition (1)
     # Print the result
