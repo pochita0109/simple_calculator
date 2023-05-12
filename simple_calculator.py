@@ -41,8 +41,14 @@ while True:
                     print(f"The difference is {difference} \n")
                     break
              
-# If multiplication (3)
-    # Print the result
+        # If multiplication (3)
+        elif operation == 3:
+             while True:
+                    # Print the result
+                    product = first_number * second_number
+                    print(f"The product is {product} \n")
+                    break
+             
 # if division (4)
     # Print the result
     # If the user entered zero as a divisor:
