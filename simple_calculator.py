@@ -76,5 +76,8 @@ while True:
             elif answer == "N":
                 print("THANK YOU FOR USING THE SIMPLE CALCULATOR")
                 exit()
-# If the user entered other characters than Y or N:
+            
+            # If the user entered other characters than Y or N:
+            else:
+                print("Invalid answer, choose Y/N")
     
