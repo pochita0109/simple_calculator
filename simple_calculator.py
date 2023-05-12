@@ -49,10 +49,21 @@ while True:
                     print(f"The product is {product} \n")
                     break
              
-# if division (4)
-    # Print the result
-    # If the user entered zero as a divisor:
-
+        # if division (4)
+        elif operation == 4:
+             while True:
+                    try:
+                        # Print the result
+                        quotient = first_number / second_number
+                        print(f"The quotient is {quotient} \n")
+                        break
+                        # If the user entered zero as a divisor:
+                    except ZeroDivisionError:
+                        print("ERROR! YOU HAVE ZERO DIVISOR, PLEASE TRY AGAIN \n")
+                        break
+        else:
+            print("Error! the value that you have entered is invalid".upper())
+              
 # Ask the user if they want to continue on using mini calculator (Y/N)
 # If Y:
 # If N:
