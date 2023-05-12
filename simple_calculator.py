@@ -15,14 +15,14 @@ print("\033[0mDIVISION: \033[95m4".center(81))
 while True:
         try:
 # Ask the user to enter the first number
-            first_number = float(input("Please enter the first number: "))
+            first_number = float(input("\033[94mPlease enter the first number: "))
 # Ask the user to enter the second number
-            second_number = float(input("Please enter the second number: "))
+            second_number = float(input("\033[94mPlease enter the second number: "))
 # Ask the user about the operation they want to use (1-4)
-            operation = int(input("\033[94mPlease enter the operation that you want to use (1,2,3,4): "))
+            operation = int(input("\033[96mPlease enter the operation that you want to use (1,2,3,4): "))
     # If the user entered invalid character:
         except ValueError:
-            print("Error! the value that you have entered is invalid".upper())
+            print("\033[91m\033[1mERROR! THE CHARACTER YOU HAVE ENTERED IS INVALID!")
             continue
 
         # If addition (1)
@@ -30,7 +30,7 @@ while True:
             while True:
                     # Print the result
                     sum = first_number + second_number
-                    print(f"The sum is {sum} \n")
+                    print(f"\033[94m\033[1mThe sum is {sum} \n")
                     break
          
         # If subtraction (2)
@@ -38,7 +38,7 @@ while True:
             while True:
                     # Print the result
                     difference = first_number - second_number
-                    print(f"The difference is {difference} \n")
+                    print(f"\033[91m\033[1mThe difference is {difference} \n")
                     break
              
         # If multiplication (3)
@@ -46,7 +46,7 @@ while True:
              while True:
                     # Print the result
                     product = first_number * second_number
-                    print(f"The product is {product} \n")
+                    print(f"\033[92m\033[1mThe product is {product} \n")
                     break
              
         # if division (4)
@@ -55,18 +55,18 @@ while True:
                     try:
                         # Print the result
                         quotient = first_number / second_number
-                        print(f"The quotient is {quotient} \n")
+                        print(f"\033[95m\033[1mThe quotient is {quotient} \n")
                         break
                         # If the user entered zero as a divisor:
                     except ZeroDivisionError:
-                        print("ERROR! YOU HAVE ZERO DIVISOR, PLEASE TRY AGAIN \n")
+                        print("\033[91m\033[1mERROR! YOU HAVE ZERO DIVISOR, PLEASE TRY AGAIN \n")
                         break
         else:
-            print("Error! the value that you have entered is invalid".upper())
+            print("\033[91m\033[1mERROR! THE CHARACTER YOU HAVE ENTERED IS INVALID!")
 
         while True:  
             # Ask the user if they want to continue on using mini calculator (Y/N)
-            answer = input("Type Y if you want to continue on using the simple calculator or N if not: ")
+            answer = input("\033[93mType Y if you want to continue on using the simple calculator or N if not: ")
 
             # If Y:
             if answer == "Y":
@@ -74,10 +74,10 @@ while True:
             
             # If N:
             elif answer == "N":
-                print("THANK YOU FOR USING THE SIMPLE CALCULATOR")
+                print("\033[95m\033[1mTHANK YOU FOR USING THE SIMPLE CALCULATOR!")
                 exit()
             
             # If the user entered other characters than Y or N:
             else:
-                print("Invalid answer, choose Y/N")
+                print("\033[91m\033[1mInvalid answer, choose Y/N")
     
