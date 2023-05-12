@@ -63,8 +63,10 @@ while True:
                         break
         else:
             print("Error! the value that you have entered is invalid".upper())
-              
-# Ask the user if they want to continue on using mini calculator (Y/N)
+
+        while True:  
+            # Ask the user if they want to continue on using mini calculator (Y/N)
+            answer = input("Type Y if you want to continue on using the simple calculator or N if not: ")
 # If Y:
 # If N:
 # If the user entered other characters than Y or N:
