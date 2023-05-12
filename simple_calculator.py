@@ -67,7 +67,11 @@ while True:
         while True:  
             # Ask the user if they want to continue on using mini calculator (Y/N)
             answer = input("Type Y if you want to continue on using the simple calculator or N if not: ")
-# If Y:
-# If N:
+
+            # If Y:
+            if answer == "Y":
+                break
+            
+            # If N:
 # If the user entered other characters than Y or N:
     
